@@ -169,28 +169,70 @@ public class ResumeParser {
      * Falls back to heuristics if NLP models are not available.
      */
     private String extractName(String text) {
+        // IMPORTANT: Always try fallback method first for better accuracy
+        // Names are typically at the top of resumes, not buried in the content
+        
+        // Try fallback method first (more reliable for resume structure)
+        String fallbackName = extractNameFallback(text);
+        if (fallbackName != null && !fallbackName.equals("Unknown")) {
+            return fallbackName;
+        }
+        
+        // If fallback fails, try NLP on first 500 characters only
         if (nlpModelsLoaded && tokenizer != null && personFinder != null) {
-            // Use OpenNLP to find person names
-            String[] tokens = tokenizer.tokenize(text);
+            // Only search in the first 500 characters (header area)
+            String headerText = text.substring(0, Math.min(500, text.length()));
+            String[] tokens = tokenizer.tokenize(headerText);
             Span[] nameSpans = personFinder.find(tokens);
             
             if (nameSpans.length > 0) {
-                // Return the first person name found
+                // Return the first person name found in header
                 StringBuilder name = new StringBuilder();
                 for (int i = nameSpans[0].getStart(); i < nameSpans[0].getEnd(); i++) {
                     name.append(tokens[i]).append(" ");
                 }
-                return name.toString().trim();
+                String nlpName = name.toString().trim();
+                
+                // Validate it's not a common job title word
+                if (!nlpName.matches(".*(Developer|Engineer|Manager|Analyst|Designer|Architect).*")) {
+                    return nlpName;
+                }
             }
         }
 
+        return "Unknown";
+    }
+    
+    /**
+     * Fallback method to extract name from first few lines.
+     */
+    private String extractNameFallback(String text) {
         // Fallback: Assume name is in the first few lines
         String[] lines = text.split("\n");
         for (int i = 0; i < Math.min(5, lines.length); i++) {
             String line = lines[i].trim();
+            
+            // Skip empty lines and lines with email/phone patterns
+            if (line.isEmpty() || line.contains("@") || line.matches(".*\\d{3}.*\\d{3}.*\\d{4}.*")) {
+                continue;
+            }
+            
             // Look for a line with 2-4 words (typical name pattern)
-            if (line.matches("^[A-Z][a-z]+(\\s+[A-Z][a-z]+){1,3}$")) {
-                return line;
+            // Accept various capitalization: "John Doe", "JOHN DOE", "John DOE"
+            String[] words = line.split("\\s+");
+            if (words.length >= 2 && words.length <= 4) {
+                // Check if it looks like a name (letters only, no special chars except hyphens and apostrophes)
+                boolean looksLikeName = true;
+                for (String word : words) {
+                    if (!word.matches("[A-Za-z][A-Za-z'-]*")) {
+                        looksLikeName = false;
+                        break;
+                    }
+                }
+                
+                if (looksLikeName) {
+                    return line;
+                }
             }
         }
 
@@ -373,10 +415,16 @@ public class ResumeParser {
             rawText = extractTextFromPDF(file);
         } else if (fileName.endsWith(".docx")) {
             rawText = extractTextFromDocx(file);
+        } else if (fileName.endsWith(".txt")) {
+            // Read plain text file
+            rawText = new String(java.nio.file.Files.readAllBytes(file.toPath()), 
+                                java.nio.charset.StandardCharsets.UTF_8);
+            System.out.println("Read text from TXT file: " + file.getName());
         } else {
-            throw new IllegalArgumentException("Unsupported file format. Only PDF and DOCX are supported.");
+            throw new IllegalArgumentException("Unsupported file format. Supported formats: PDF, DOCX, TXT");
         }
 
+        System.out.println("Processing file: " + file.getName());
         return parse(rawText);
     }
 }

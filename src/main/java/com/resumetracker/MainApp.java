@@ -272,9 +272,10 @@ public class MainApp extends Application {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Select Resume Files");
         fileChooser.getExtensionFilters().addAll(
-            new FileChooser.ExtensionFilter("Resume Files", "*.pdf", "*.docx"),
+            new FileChooser.ExtensionFilter("All Resume Files", "*.pdf", "*.docx", "*.txt"),
             new FileChooser.ExtensionFilter("PDF Files", "*.pdf"),
-            new FileChooser.ExtensionFilter("DOCX Files", "*.docx")
+            new FileChooser.ExtensionFilter("DOCX Files", "*.docx"),
+            new FileChooser.ExtensionFilter("Text Files", "*.txt")
         );
 
         List<File> selectedFiles = fileChooser.showOpenMultipleDialog(null);
