@@ -1,0 +1,51 @@
+JOB TITLE: Senior Java Developer
+
+LOCATION: Remote / Hybrid
+
+EXPERIENCE REQUIRED: 4-6 years
+
+ABOUT THE ROLE:
+We are seeking an experienced Senior Java Developer to join our growing engineering team. 
+The ideal candidate will have strong expertise in Java development, Spring Boot framework, 
+and cloud technologies.
+
+REQUIRED SKILLS:
+- Strong proficiency in Java (Java 11 or higher)
+- Experience with Spring Boot and Spring Framework
+- Hands-on experience with microservices architecture
+- Knowledge of RESTful API design and development
+- Experience with relational databases (MySQL, PostgreSQL)
+- Familiarity with Docker and Kubernetes
+- Experience with cloud platforms (AWS or Azure)
+- Strong understanding of Git and version control
+- Experience with CI/CD pipelines (Jenkins, GitLab CI)
+
+PREFERRED SKILLS:
+- Experience with React or Angular for frontend development
+- Knowledge of MongoDB or other NoSQL databases
+- Familiarity with message queuing systems (Kafka, RabbitMQ)
+- Experience with test-driven development (TDD)
+- Understanding of agile methodologies
+
+RESPONSIBILITIES:
+- Design and develop scalable microservices using Spring Boot
+- Write clean, maintainable, and efficient code
+- Collaborate with cross-functional teams to define and implement features
+- Participate in code reviews and provide constructive feedback
+- Mentor junior developers and share knowledge
+- Troubleshoot and debug production issues
+- Contribute to architectural decisions
+
+QUALIFICATIONS:
+- Bachelor's degree in Computer Science or related field
+- 4-6 years of professional Java development experience
+- Strong problem-solving skills
+- Excellent communication and teamwork abilities
+- Self-motivated and able to work independently
+
+BENEFITS:
+- Competitive salary
+- Health insurance
+- Flexible work hours
+- Professional development opportunities
+- Work-from-home options

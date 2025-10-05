@@ -1,0 +1,36 @@
+JOHN DOE
+Email: john.doe@email.com
+Phone: (555) 123-4567
+
+PROFESSIONAL SUMMARY
+Experienced Software Engineer with 5 years of experience in Java development, 
+specializing in enterprise applications and microservices architecture.
+
+SKILLS
+- Programming Languages: Java, Python, JavaScript
+- Frameworks: Spring Boot, Hibernate, React
+- Databases: MySQL, PostgreSQL, MongoDB
+- Tools: Git, Docker, Kubernetes, Jenkins
+- Cloud: AWS, Azure
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of Technology, 2018
+
+WORK EXPERIENCE
+
+Senior Java Developer | Tech Solutions Inc. | 2021 - Present
+- Developed microservices using Spring Boot and deployed on AWS
+- Led a team of 4 developers in building a customer management system
+- Implemented RESTful APIs and integrated with third-party services
+- Improved application performance by 40% through code optimization
+
+Java Developer | Digital Innovations Ltd. | 2019 - 2021
+- Built web applications using Java, Spring Framework, and MySQL
+- Collaborated with cross-functional teams to deliver projects on time
+- Participated in code reviews and maintained coding standards
+
+Junior Developer | StartUp Co. | 2018 - 2019
+- Worked on bug fixes and feature enhancements
+- Learned agile development methodologies
+- Contributed to front-end development using JavaScript and React

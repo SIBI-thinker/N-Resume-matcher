@@ -1,0 +1,39 @@
+# Build artifacts
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE specific files
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+*.swp
+*.swo
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Database
+database.db
+*.db
+
+# Logs
+*.log
+
+# Maven
+dependency-reduced-pom.xml
+
+# Temporary files
+*.tmp
+*.bak
+
+# OpenNLP models (large files)
+# Uncomment if you don't want to commit models
+# src/main/resources/models/*.bin

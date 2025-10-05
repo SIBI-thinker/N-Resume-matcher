@@ -1,0 +1,38 @@
+JANE SMITH
+jane.smith@techmail.com | Phone: +1-555-987-6543
+
+SUMMARY
+Full-Stack Developer with 3 years of experience in building scalable web applications
+using modern technologies. Strong background in both frontend and backend development.
+
+TECHNICAL SKILLS
+Frontend: React, Angular, Vue.js, HTML5, CSS3, TypeScript
+Backend: Node.js, Express, Python, Django
+Databases: MongoDB, Redis, PostgreSQL
+DevOps: Docker, Kubernetes, CI/CD, GitHub Actions
+Cloud Platforms: AWS, Google Cloud Platform
+
+EDUCATION
+Master of Science in Software Engineering
+State University, 2020
+
+Bachelor of Technology in Information Technology
+Tech Institute, 2018
+
+PROFESSIONAL EXPERIENCE
+
+Full-Stack Developer | Web Solutions Corp | 2022 - Present
+- Architected and developed responsive web applications using React and Node.js
+- Implemented microservices architecture with Docker and Kubernetes
+- Optimized database queries reducing response time by 50%
+- Mentored junior developers and conducted technical training sessions
+
+Frontend Developer | Creative Digital Agency | 2020 - 2022
+- Built interactive user interfaces using React and TypeScript
+- Collaborated with UX designers to implement pixel-perfect designs
+- Integrated RESTful APIs and GraphQL endpoints
+- Implemented state management using Redux
+
+CERTIFICATIONS
+- AWS Certified Developer - Associate
+- MongoDB Certified Developer

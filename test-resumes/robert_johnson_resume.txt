@@ -1,0 +1,45 @@
+Robert Johnson
+Contact: robert.j@devmail.com | (555) 456-7890
+
+OBJECTIVE
+Seeking a challenging position as a DevOps Engineer where I can utilize my 
+7 years of experience in cloud infrastructure and automation.
+
+CORE COMPETENCIES
+• Cloud Infrastructure: AWS, Azure, Google Cloud
+• Container Orchestration: Kubernetes, Docker Swarm, ECS
+• Infrastructure as Code: Terraform, CloudFormation, Ansible
+• CI/CD Tools: Jenkins, GitLab CI, CircleCI, GitHub Actions
+• Monitoring: Prometheus, Grafana, ELK Stack, Datadog
+• Scripting: Python, Bash, PowerShell
+• Version Control: Git, GitHub, GitLab
+
+ACADEMIC BACKGROUND
+Bachelor of Engineering in Computer Science
+Engineering College, 2015
+
+WORK HISTORY
+
+Senior DevOps Engineer | Cloud Infrastructure Ltd | 2021 - Present
+- Designed and implemented scalable cloud infrastructure on AWS and Azure
+- Automated deployment pipelines reducing deployment time by 70%
+- Managed Kubernetes clusters serving 100+ microservices
+- Implemented monitoring and alerting using Prometheus and Grafana
+- Reduced infrastructure costs by 30% through optimization
+
+DevOps Engineer | Tech Innovations Inc | 2018 - 2021
+- Built CI/CD pipelines using Jenkins and GitLab CI
+- Containerized legacy applications using Docker
+- Automated infrastructure provisioning with Terraform
+- Implemented blue-green deployment strategies
+
+System Administrator | IT Services Co | 2015 - 2018
+- Maintained Linux and Windows servers
+- Performed regular system updates and security patches
+- Managed user access and permissions
+- Provided technical support to development teams
+
+CERTIFICATIONS
+• AWS Certified Solutions Architect - Professional
+• Certified Kubernetes Administrator (CKA)
+• HashiCorp Certified: Terraform Associate
